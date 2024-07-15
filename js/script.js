@@ -24,7 +24,7 @@ async function getSongs(folder) {
 
     currFolder = folder;
     // let a = await fetch(`http://127.0.0.1:10/${folder}/`) //ye link change krna pdegi ager fir se new brows me kholenge to
-    let a = await fetch(`/${folder}/`) 
+    let a = await fetch(`/${folder}/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
